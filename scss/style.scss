@@ -1,0 +1,398 @@
+$gris-oscuro: #343434;
+$blanco: #f3f3f3;
+$gris-claro: #8e8b82;
+$verde: #649d66;
+$success: #649d66;
+$font-primary: roboto;
+$font-secundary: staatliches;
+
+// VARIABLE TIPOGRAFICA
+@mixin tipografia( $family, $weight, $size, $color){
+    font-family: $family;
+    font-weight: $weight;
+    font-size: $size;
+    color: $color;
+}
+// VARIABLE BG-COLOR
+$colores:(
+    gris-oscuro: #343434,
+    blanco: #f3f3f3,
+    gris-claro: #8e8b82,
+    verde: #649d66,
+    blanco-f: #fff,
+);
+@each $nombre, $color in $colores {
+    .fondo-#{$nombre}{
+        background-color: $color;
+    }
+}
+header{
+    nav{
+        font-family: $font-primary;
+    }
+    .fondo-index{
+        background-image: url(../fotos/fondos/fondo.jpg);   
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+        
+        .titulo-index{
+            @include tipografia($font-secundary, normal, 6rem, $blanco);
+	        line-height: 1;
+            letter-spacing: 10px;
+        }
+    }
+}
+.pulsar{
+    transition: 150ms ease;
+        &:hover {
+        transform: scale(1.2);
+        }
+}
+.subtitulo{
+    @include tipografia($font-secundary, normal, 3.5rem, $gris-claro);
+    font-style: italic;
+}
+.parrafo-index{
+    @include tipografia($font-primary, 300, 1.5rem, $gris-oscuro);
+    font-style: italic;
+}
+.ver-mas{
+    @include tipografia($font-secundary, normal, 1.2rem, $verde);
+}
+.subtitulo-blanco{
+    @include tipografia($font-secundary, normal, 2.5rem, $blanco);
+    letter-spacing: 10px;
+}
+.parrafo-blanco{
+    @include tipografia($font-primary, 400, 1rem, $blanco);
+    font-style: italic;
+    letter-spacing: 1px;
+}
+// GALERIA FOTO
+.subtitulo-blog {
+    @include tipografia($font-primary, 400, 1rem, $gris-oscuro);
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.contenedor-foto {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    .texto-imagen {
+        position: absolute;
+        text-align: center;
+        @include tipografia($font-secundary, normal, 3rem, $gris-oscuro);
+        font-style: italic;
+        transition: 150ms;
+        opacity: 0;
+        margin: 0px;
+        padding: 160px;
+        background-color: $blanco;
+        
+        &:hover{
+            opacity: .5;
+        }
+        a{
+            text-decoration: none;
+            color: $gris-oscuro;
+        }
+    }
+}
+.texto-modal{
+    font-family: $font-primary;
+}
+.box-viaje{
+    div{
+        h4{
+            @include tipografia($font-secundary, normal, 1.3rem, $blanco);
+            text-transform: uppercase;
+            letter-spacing: .2rem;
+            padding-top: .5rem;
+        }
+        p {
+            @include tipografia($font-primary, normal, 1rem, $blanco);
+            margin: 0px;
+            padding: 0px;
+        }
+        a{
+            @include tipografia($font-secundary, normal, 1rem, $gris-oscuro);
+        }
+    }
+    .card-img-top{
+        width: 100%;
+    }
+    .card-body{
+        .card-title{
+            @include tipografia($font-secundary, normal, 1.5rem, $gris-oscuro);
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: .5rem;;
+        }
+        .card-text {
+            @include tipografia($font-primary, normal, 1rem, $blanco);
+            text-align: center;
+        }
+    }   
+}
+// NOSOTRAS
+.titulo{
+    @include tipografia($font-secundary, normal, 6rem, $blanco);
+    text-align: center;
+	line-height: 1;
+    font-style: italic;
+    padding-top: 7rem;
+    letter-spacing: .2rem;
+}
+.parrafo{
+    @include tipografia($font-primary, 400, 1.3rem, $blanco);
+    text-align: center;
+    font-style: italic;
+}
+.lista-nosotras{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    img{
+        width: 300px;
+        margin: auto;
+    }
+    h2{
+        @include tipografia($font-secundary, normal, 2rem, $gris-oscuro);
+        letter-spacing: .4rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    p{
+        @include tipografia($font-primary, 300, 1rem, $gris-oscuro);
+        text-align: left;
+        margin-top: 1rem;
+    }
+    div{
+        a{
+            font-size: 1rem;
+            color: $gris-oscuro;
+            margin-right: 1rem;
+            transition: 150ms ease;
+            :hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+// GUIA VIAJERA
+.fondo-guia{
+        background-image: url(../fotos/fondos/fondo-guia.jpg);   
+        background-repeat: no-repeat;
+        background-position: top;
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+        background-size: 100%;
+        .titulo-guia{
+            @include tipografia($font-secundary, normal, 6rem, $blanco);            
+            text-align: left;
+            font-style: italic;
+            line-height: 1;
+        }
+}
+.presupuesto {
+    @include tipografia($font-primary, 300, 1.5rem, $gris-oscuro);            
+    font-style: italic;
+    h3{
+        @include tipografia($font-primary, normal, 1.5rem, $blanco);
+        letter-spacing: .2rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .card-title{
+        @include tipografia($font-primary, normal, 1.3rem, $gris-claro);
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+    }
+    .card-text{
+        @include tipografia($font-primary, normal, 1rem, $gris-claro);
+
+    }
+    .text-colapse {
+        @include tipografia($font-primary, normal, .9rem, $gris-claro);
+  
+    }
+}
+.itinerario{
+    h3{
+        @include tipografia($font-secundary, normal, 2rem, $gris-claro);
+        letter-spacing: .2rem;
+        text-align: center;
+    }
+    h4{
+        @include tipografia($font-primary, 300, 1.2rem, $gris-oscuro);
+        text-align: center;
+        font-style: italic;
+    }
+    img {
+        width: 70%;
+        text-align: center;
+        margin: auto;
+        display:block;
+    }
+    .items {
+        h5{
+            @include tipografia($font-primary, bold, 1.1rem, $gris-oscuro);
+        }
+        p{
+            @include tipografia($font-primary, 300, 1.1rem, $gris-oscuro);
+        }
+        h6{
+            @include tipografia($font-primary, bold, 1.1rem, $gris-oscuro);
+            // text-align: center;
+        }
+        a{
+            display: inline;
+            @include tipografia($font-primary, 300, 1.2rem, $blanco);
+            &:hover{
+                background-color: $blanco;
+                color: $gris-claro;
+            }
+        }
+    }
+}
+// DESTINOS
+.enlace-continetes {
+    text-align: center;   
+    a {
+        @include tipografia($font-secundary, normal, 2rem, $blanco);
+        letter-spacing: .2rem;
+        padding: 1rem;
+        text-decoration: none;
+    }
+}
+.continente {
+    h3{
+        @include tipografia($font-secundary, normal, 2.5rem, $gris-oscuro);
+        letter-spacing: 0.2rem;
+
+    }
+    h4{
+        @include tipografia($font-primary, 300, 1rem, $gris-claro);            
+    }
+}
+.ciudades {
+    text-align: center;
+    h4{
+        @include tipografia($font-primary, normal, 1.2rem, $gris-oscuro);            
+        letter-spacing: 0.2rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .oscuro{
+        .card-title {
+            @include tipografia($font-primary, 300, 1rem, $gris-oscuro);            
+            text-transform: uppercase;
+        }   
+        .card-text {
+            @include tipografia($font-primary, 300, .7rem, $gris-oscuro);            
+        }
+    }
+    .claro {
+        .card-title {     
+            @include tipografia($font-primary, 300, 1rem, $blanco);
+            text-transform: uppercase;     
+        }
+        .card-text {
+            @include tipografia($font-primary, 300, .7rem, $blanco);            
+        }
+    }
+}
+.preguntas {
+    h3{
+        @include tipografia($font-primary, 300, 1.2rem, $blanco);
+        letter-spacing: 0.2rem;
+        text-transform: uppercase;
+    }
+    p {
+        @include tipografia($font-primary, 300, 1rem, $blanco);   
+    }
+}
+
+// NEWSLETTER
+.fondo-news{
+    background-image: url(../fotos/fondos/fondo-news.jpg);   
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    background-size: 100%;
+    h1{
+        @include tipografia($font-secundary, normal, 6rem, $blanco);            
+        text-align: left;
+        font-style: italic;
+        line-height: 1;
+    }
+}
+.formulario {
+    h3{
+        @include tipografia($font-primary, 300, 1.2rem, $gris-oscuro);
+        font-style: italic;
+    }
+    form{
+        @include tipografia($font-primary, 300, 1rem, $gris-oscuro);
+    }
+}
+.btn-form {
+    color: $blanco;
+    &:hover{
+        background-color: $blanco;
+        color: $gris-claro;
+        border-style: solid;
+        border-color: $gris-claro;
+    }
+}
+// FOOTER
+footer {
+    @include tipografia($font-primary, 300, 1rem, $blanco);
+    div{
+        align-items: center;
+        a{
+            color: $blanco;
+        }
+    }
+}
+// MEDIA QUERIES
+@media (max-width: 575px) {
+    :root{
+       font-size: 12px;
+    }
+    section{
+        text-align: center;
+    }
+    .box-viaje{
+        .btn-guia{
+            display: none;
+        }
+        .btn-destino{
+            display: none;
+        }
+    }
+    .enlace-continetes{
+        a{
+            font-size: 1.5rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+    .continente{
+        h3{
+            font-size: 2rem;
+        }
+        h4{
+            font-size: 0.8rem;
+        }
+    }
+    form{
+        text-align: left;
+    }
+}

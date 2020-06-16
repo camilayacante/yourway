@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nosotras</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Staatliches&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<main>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-light fixed-top" >
+                <div class="container">
+                    <a href="index.html" class="navbar-brand"><img src="fotos/logo.png" width="200px"/></a>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fas fa-bars ml-1"></i></button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav text-uppercase ml-auto">
+                            <li class="nav-item"><a class="nav-link text-dark pulsar mr-4" href="nosotras.html">Nosotras</a></li>
+                            <li class="nav-item"><a class="nav-link text-dark pulsar mr-4" href="guia-viajera.html">Guia</a></li>
+                            <li class="nav-item"><a class="nav-link text-dark pulsar mr-4" href="destinos.html">Destinos</a></li>
+                            <li class="nav-item"><a class="nav-link text-dark pulsar" href="newsletter.html">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="container-fluid fondo-news">
+            <h1 class="container">mantenete<br/>al tanto</h1>
+        </section>
+        <section class="container-fluid fondo-blanco">
+            <div class="container formulario pb-5">
+                <h2 class="subtitulo pt-5">suscribite al newsletter</h2>
+                <h3 class="col-12 col-md-8 p-md-0">No te pierdas toda la información y consejos para poder disfrutar mejor de cada destino: restaurantes recomendados, eventos imprescindibles, lugares alternativos... los mejores planes para los viajeros más curiosos.</h3>
+                <div class="mt-5">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="name">Nombre</label>
+                                <input type="text" class="form-control" id="name" name="name" required="">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="surname">Apellido</label>
+                                <input type="text" class="form-control" id="surname" name="surname" required="">
+                            </div>
+                        </div>
+                        <div class="form-group col-md-8 p-0">
+                            <label for="email">Correo electronico</label>
+                            <input type="email" class="form-control" id="email" name="email" required="" placeholder="nombre@email.com">
+                        </div>
+                        <div class="form-group col-md-8 p-0">
+                            <label for="frequency">Tu dosis de informacion</label>
+                            <select id="frequency" class="form-control" name="frequency">
+                                <option disabled="" selected="">Elige una</option>
+                                <option value="a-diario">A diario</option>
+                                <option value="cada-3-dias">Cada 3 días</option>
+                                <option value="semanal">Semanal</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="terminos" value="yes" name="acept" required="" checked="">
+                                <label class="form-check-label" for="terminos">Acepta Terminos & Condiciones</label>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="#">Ver Terminos & Condiciones</a>
+                        </div>
+                        <div class="col-md-8 text-right">
+                            <button type="reset" class="btn btn-form fondo-gris-claro mr-4">Resetear</button>
+                            <button type="sumit" class="btn btn-form fondo-gris-claro">Suscribirme</button>                        
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="container-fluid fondo-gris-claro p-3">
+            <div class="container">
+                <div class="row m-auto text-center">
+                    <div class="col-4">
+                        <h6>yourway@gmail.com</h6>
+                    </div>
+                    <div class="col-4">
+                        <a class="btn btn-outline-light rounded-circle mr-3" href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light rounded-circle" href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#" class="m-3">Soporte</a>
+                        <a href="#">Privacidad</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+  

@@ -1,0 +1,434 @@
+.fondo-gris-oscuro {
+  background-color: #343434; }
+
+.fondo-blanco {
+  background-color: #f3f3f3; }
+
+.fondo-gris-claro {
+  background-color: #8e8b82; }
+
+.fondo-verde {
+  background-color: #649d66; }
+
+.fondo-blanco-f {
+  background-color: #fff; }
+
+header nav {
+  font-family: roboto; }
+
+header .fondo-index {
+  background-image: url(../fotos/fondos/fondo.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 10rem;
+  padding-bottom: 5rem; }
+  header .fondo-index .titulo-index {
+    font-family: staatliches;
+    font-weight: normal;
+    font-size: 6rem;
+    color: #f3f3f3;
+    line-height: 1;
+    letter-spacing: 10px; }
+
+.pulsar {
+  transition: 150ms ease; }
+  .pulsar:hover {
+    transform: scale(1.2); }
+
+.subtitulo {
+  font-family: staatliches;
+  font-weight: normal;
+  font-size: 3.5rem;
+  color: #8e8b82;
+  font-style: italic; }
+
+.parrafo-index {
+  font-family: roboto;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #343434;
+  font-style: italic; }
+
+.ver-mas {
+  font-family: staatliches;
+  font-weight: normal;
+  font-size: 1.2rem;
+  color: #649d66; }
+
+.subtitulo-blanco {
+  font-family: staatliches;
+  font-weight: normal;
+  font-size: 2.5rem;
+  color: #f3f3f3;
+  letter-spacing: 10px; }
+
+.parrafo-blanco {
+  font-family: roboto;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #f3f3f3;
+  font-style: italic;
+  letter-spacing: 1px; }
+
+.subtitulo-blog {
+  font-family: roboto;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #343434;
+  letter-spacing: .5rem;
+  text-transform: uppercase;
+  text-align: center; }
+
+.contenedor-foto {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; }
+  .contenedor-foto .texto-imagen {
+    position: absolute;
+    text-align: center;
+    font-family: staatliches;
+    font-weight: normal;
+    font-size: 3rem;
+    color: #343434;
+    font-style: italic;
+    transition: 150ms;
+    opacity: 0;
+    margin: 0px;
+    padding: 160px;
+    background-color: #f3f3f3; }
+    .contenedor-foto .texto-imagen:hover {
+      opacity: .5; }
+    .contenedor-foto .texto-imagen a {
+      text-decoration: none;
+      color: #343434; }
+
+.texto-modal {
+  font-family: roboto; }
+
+.box-viaje div h4 {
+  font-family: staatliches;
+  font-weight: normal;
+  font-size: 1.3rem;
+  color: #f3f3f3;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  padding-top: .5rem; }
+
+.box-viaje div p {
+  font-family: roboto;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #f3f3f3;
+  margin: 0px;
+  padding: 0px; }
+
+.box-viaje div a {
+  font-family: staatliches;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #343434; }
+
+.box-viaje .card-img-top {
+  width: 100%; }
+
+.box-viaje .card-body .card-title {
+  font-family: staatliches;
+  font-weight: normal;
+  font-size: 1.5rem;
+  color: #343434;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: .5rem; }
+
+.box-viaje .card-body .card-text {
+  font-family: roboto;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #f3f3f3;
+  text-align: center; }
+
+.titulo {
+  font-family: staatliches;
+  font-weight: normal;
+  font-size: 6rem;
+  color: #f3f3f3;
+  text-align: center;
+  line-height: 1;
+  font-style: italic;
+  padding-top: 7rem;
+  letter-spacing: .2rem; }
+
+.parrafo {
+  font-family: roboto;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #f3f3f3;
+  text-align: center;
+  font-style: italic; }
+
+.lista-nosotras {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  .lista-nosotras img {
+    width: 300px;
+    margin: auto; }
+  .lista-nosotras h2 {
+    font-family: staatliches;
+    font-weight: normal;
+    font-size: 2rem;
+    color: #343434;
+    letter-spacing: .4rem;
+    text-align: center;
+    margin-top: 1rem; }
+  .lista-nosotras p {
+    font-family: roboto;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #343434;
+    text-align: left;
+    margin-top: 1rem; }
+  .lista-nosotras div a {
+    font-size: 1rem;
+    color: #343434;
+    margin-right: 1rem;
+    transition: 150ms ease; }
+    .lista-nosotras div a :hover {
+      transform: scale(1.2); }
+
+.fondo-guia {
+  background-image: url(../fotos/fondos/fondo-guia.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  background-size: 100%; }
+  .fondo-guia .titulo-guia {
+    font-family: staatliches;
+    font-weight: normal;
+    font-size: 6rem;
+    color: #f3f3f3;
+    text-align: left;
+    font-style: italic;
+    line-height: 1; }
+
+.presupuesto {
+  font-family: roboto;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #343434;
+  font-style: italic; }
+  .presupuesto h3 {
+    font-family: roboto;
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: #f3f3f3;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    text-align: center; }
+  .presupuesto .card-title {
+    font-family: roboto;
+    font-weight: normal;
+    font-size: 1.3rem;
+    color: #8e8b82;
+    text-transform: uppercase;
+    letter-spacing: .2rem; }
+  .presupuesto .card-text {
+    font-family: roboto;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #8e8b82; }
+  .presupuesto .text-colapse {
+    font-family: roboto;
+    font-weight: normal;
+    font-size: 0.9rem;
+    color: #8e8b82; }
+
+.itinerario h3 {
+  font-family: staatliches;
+  font-weight: normal;
+  font-size: 2rem;
+  color: #8e8b82;
+  letter-spacing: .2rem;
+  text-align: center; }
+
+.itinerario h4 {
+  font-family: roboto;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #343434;
+  text-align: center;
+  font-style: italic; }
+
+.itinerario img {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  display: block; }
+
+.itinerario .items h5 {
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #343434; }
+
+.itinerario .items p {
+  font-family: roboto;
+  font-weight: 300;
+  font-size: 1.1rem;
+  color: #343434; }
+
+.itinerario .items h6 {
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #343434; }
+
+.itinerario .items a {
+  display: inline;
+  font-family: roboto;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #f3f3f3; }
+  .itinerario .items a:hover {
+    background-color: #f3f3f3;
+    color: #8e8b82; }
+
+.enlace-continetes {
+  text-align: center; }
+  .enlace-continetes a {
+    font-family: staatliches;
+    font-weight: normal;
+    font-size: 2rem;
+    color: #f3f3f3;
+    letter-spacing: .2rem;
+    padding: 1rem;
+    text-decoration: none; }
+
+.continente h3 {
+  font-family: staatliches;
+  font-weight: normal;
+  font-size: 2.5rem;
+  color: #343434;
+  letter-spacing: 0.2rem; }
+
+.continente h4 {
+  font-family: roboto;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #8e8b82; }
+
+.ciudades {
+  text-align: center; }
+  .ciudades h4 {
+    font-family: roboto;
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: #343434;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    text-align: center; }
+  .ciudades .oscuro .card-title {
+    font-family: roboto;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #343434;
+    text-transform: uppercase; }
+  .ciudades .oscuro .card-text {
+    font-family: roboto;
+    font-weight: 300;
+    font-size: 0.7rem;
+    color: #343434; }
+  .ciudades .claro .card-title {
+    font-family: roboto;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #f3f3f3;
+    text-transform: uppercase; }
+  .ciudades .claro .card-text {
+    font-family: roboto;
+    font-weight: 300;
+    font-size: 0.7rem;
+    color: #f3f3f3; }
+
+.preguntas h3 {
+  font-family: roboto;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #f3f3f3;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase; }
+
+.preguntas p {
+  font-family: roboto;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #f3f3f3; }
+
+.fondo-news {
+  background-image: url(../fotos/fondos/fondo-news.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  background-size: 100%; }
+  .fondo-news h1 {
+    font-family: staatliches;
+    font-weight: normal;
+    font-size: 6rem;
+    color: #f3f3f3;
+    text-align: left;
+    font-style: italic;
+    line-height: 1; }
+
+.formulario h3 {
+  font-family: roboto;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #343434;
+  font-style: italic; }
+
+.formulario form {
+  font-family: roboto;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #343434; }
+
+.btn-form {
+  color: #f3f3f3; }
+  .btn-form:hover {
+    background-color: #f3f3f3;
+    color: #8e8b82;
+    border-style: solid;
+    border-color: #8e8b82; }
+
+footer {
+  font-family: roboto;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #f3f3f3; }
+  footer div {
+    align-items: center; }
+    footer div a {
+      color: #f3f3f3; }
+
+@media (max-width: 575px) {
+  :root {
+    font-size: 12px; }
+  section {
+    text-align: center; }
+  .box-viaje .btn-guia {
+    display: none; }
+  .box-viaje .btn-destino {
+    display: none; }
+  .enlace-continetes a {
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  .continente h3 {
+    font-size: 2rem; }
+  .continente h4 {
+    font-size: 0.8rem; }
+  form {
+    text-align: left; } }
