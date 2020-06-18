@@ -26,6 +26,7 @@ $colores:(
         background-color: $color;
     }
 }
+// INDEX 
 header{
     nav{
         font-family: $font-primary;
@@ -46,8 +47,10 @@ header{
 }
 .pulsar{
     transition: 150ms ease;
+    color: $gris-oscuro;
         &:hover {
         transform: scale(1.2);
+        color: $verde;
         }
 }
 .subtitulo{
@@ -104,6 +107,20 @@ header{
         }
     }
 }
+.modal-title {
+    @include tipografia($font-primary, normal, 1rem, $blanco);
+}
+.modal-body{
+    h2{
+        @include tipografia($font-secundary, normal, 2rem, $gris-claro);
+    }
+}
+.modal-footer {
+    a{
+        @include tipografia($font-secundary, normal, 1.2rem, $verde);
+
+    }
+}
 .texto-modal{
     font-family: $font-primary;
 }
@@ -141,8 +158,13 @@ header{
     }   
 }
 // NOSOTRAS
+.fondo-patron{
+    background-image: url(../fotos/patronvector.svg);
+    background-size: left, bottom;
+    padding-bottom: 5rem;
+}
 .titulo{
-    @include tipografia($font-secundary, normal, 6rem, $blanco);
+    @include tipografia($font-secundary, normal, 6rem, $gris-oscuro);
     text-align: center;
 	line-height: 1;
     font-style: italic;
@@ -150,15 +172,19 @@ header{
     letter-spacing: .2rem;
 }
 .parrafo{
-    @include tipografia($font-primary, 400, 1.3rem, $blanco);
+    @include tipografia($font-primary, 400, 1.3rem, $gris-claro);
     text-align: center;
     font-style: italic;
 }
 .lista-nosotras{
     padding-top: 2rem;
     padding-bottom: 2rem;
+    transition: 150ms ease;
+    &:hover {
+        transform: scale(1.1);
+    }
     img{
-        width: 300px;
+        width: 18rem;
         margin: auto;
     }
     h2{
@@ -264,20 +290,34 @@ header{
 .enlace-continetes {
     text-align: center;   
     a {
-        @include tipografia($font-secundary, normal, 2rem, $blanco);
+        @include tipografia($font-secundary, normal, 2rem, $gris-claro);
         letter-spacing: .2rem;
-        padding: 1rem;
+        padding: .5rem;
         text-decoration: none;
     }
 }
 .continente {
+    padding: 2rem;
     h3{
         @include tipografia($font-secundary, normal, 2.5rem, $gris-oscuro);
         letter-spacing: 0.2rem;
-
+        text-align: left;    
     }
     h4{
-        @include tipografia($font-primary, 300, 1rem, $gris-claro);            
+        @include tipografia($font-primary, 300, 1rem, $gris-claro);        
+        text-align: left;    
+    }
+    a{
+        display: block;
+        text-align: right;
+        margin-right: 2rem;
+        .flecha{
+            font-size: 2rem;
+            color: $verde;
+            &:hover{
+                color: $gris-oscuro;
+            }
+        }
     }
 }
 .ciudades {
@@ -287,6 +327,12 @@ header{
         letter-spacing: 0.2rem;
         text-transform: uppercase;
         text-align: center;
+    }
+    .card {
+        transition: 150ms ease;
+        &:hover {
+        transform: scale(1.05);
+        }
     }
     .oscuro{
         .card-title {
@@ -362,9 +408,14 @@ footer {
     }
 }
 // MEDIA QUERIES
-@media (max-width: 575px) {
+@media (max-width: 768px) {
     :root{
        font-size: 12px;
+    }
+}
+@media (max-width: 575px) {
+    :root{
+       font-size: 8px;
     }
     section{
         text-align: center;

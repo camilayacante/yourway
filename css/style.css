@@ -31,9 +31,11 @@ header .fondo-index {
     letter-spacing: 10px; }
 
 .pulsar {
-  transition: 150ms ease; }
+  transition: 150ms ease;
+  color: #343434; }
   .pulsar:hover {
-    transform: scale(1.2); }
+    transform: scale(1.2);
+    color: #649d66; }
 
 .subtitulo {
   font-family: staatliches;
@@ -104,6 +106,24 @@ header .fondo-index {
       text-decoration: none;
       color: #343434; }
 
+.modal-title {
+  font-family: roboto;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #f3f3f3; }
+
+.modal-body h2 {
+  font-family: staatliches;
+  font-weight: normal;
+  font-size: 2rem;
+  color: #8e8b82; }
+
+.modal-footer a {
+  font-family: staatliches;
+  font-weight: normal;
+  font-size: 1.2rem;
+  color: #649d66; }
+
 .texto-modal {
   font-family: roboto; }
 
@@ -149,11 +169,16 @@ header .fondo-index {
   color: #f3f3f3;
   text-align: center; }
 
+.fondo-patron {
+  background-image: url(../fotos/patronvector.svg);
+  background-size: left, bottom;
+  padding-bottom: 5rem; }
+
 .titulo {
   font-family: staatliches;
   font-weight: normal;
   font-size: 6rem;
-  color: #f3f3f3;
+  color: #343434;
   text-align: center;
   line-height: 1;
   font-style: italic;
@@ -164,15 +189,18 @@ header .fondo-index {
   font-family: roboto;
   font-weight: 400;
   font-size: 1.3rem;
-  color: #f3f3f3;
+  color: #8e8b82;
   text-align: center;
   font-style: italic; }
 
 .lista-nosotras {
   padding-top: 2rem;
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  transition: 150ms ease; }
+  .lista-nosotras:hover {
+    transform: scale(1.1); }
   .lista-nosotras img {
-    width: 300px;
+    width: 18rem;
     margin: auto; }
   .lista-nosotras h2 {
     font-family: staatliches;
@@ -301,23 +329,35 @@ header .fondo-index {
     font-family: staatliches;
     font-weight: normal;
     font-size: 2rem;
-    color: #f3f3f3;
+    color: #8e8b82;
     letter-spacing: .2rem;
-    padding: 1rem;
+    padding: .5rem;
     text-decoration: none; }
 
-.continente h3 {
-  font-family: staatliches;
-  font-weight: normal;
-  font-size: 2.5rem;
-  color: #343434;
-  letter-spacing: 0.2rem; }
-
-.continente h4 {
-  font-family: roboto;
-  font-weight: 300;
-  font-size: 1rem;
-  color: #8e8b82; }
+.continente {
+  padding: 2rem; }
+  .continente h3 {
+    font-family: staatliches;
+    font-weight: normal;
+    font-size: 2.5rem;
+    color: #343434;
+    letter-spacing: 0.2rem;
+    text-align: left; }
+  .continente h4 {
+    font-family: roboto;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #8e8b82;
+    text-align: left; }
+  .continente a {
+    display: block;
+    text-align: right;
+    margin-right: 2rem; }
+    .continente a .flecha {
+      font-size: 2rem;
+      color: #649d66; }
+      .continente a .flecha:hover {
+        color: #343434; }
 
 .ciudades {
   text-align: center; }
@@ -329,6 +369,10 @@ header .fondo-index {
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     text-align: center; }
+  .ciudades .card {
+    transition: 150ms ease; }
+    .ciudades .card:hover {
+      transform: scale(1.05); }
   .ciudades .oscuro .card-title {
     font-family: roboto;
     font-weight: 300;
@@ -413,9 +457,13 @@ footer {
     footer div a {
       color: #f3f3f3; }
 
+@media (max-width: 768px) {
+  :root {
+    font-size: 12px; } }
+
 @media (max-width: 575px) {
   :root {
-    font-size: 12px; }
+    font-size: 8px; }
   section {
     text-align: center; }
   .box-viaje .btn-guia {
