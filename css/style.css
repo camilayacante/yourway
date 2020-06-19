@@ -172,7 +172,7 @@ header .fondo-index {
 .fondo-patron {
   background-image: url(../fotos/patronvector.svg);
   background-size: left, bottom;
-  padding-bottom: 5rem; }
+  padding-bottom: 2rem; }
 
 .titulo {
   font-family: staatliches;
@@ -323,19 +323,28 @@ header .fondo-index {
     background-color: #f3f3f3;
     color: #8e8b82; }
 
-.enlace-continetes {
-  text-align: center; }
-  .enlace-continetes a {
-    font-family: staatliches;
-    font-weight: normal;
-    font-size: 2rem;
-    color: #8e8b82;
-    letter-spacing: .2rem;
-    padding: .5rem;
-    text-decoration: none; }
+.parrafo-r {
+  font-family: roboto;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #8e8b82;
+  text-align: center;
+  font-style: italic;
+  padding-top: 7rem; }
+
+.img-map {
+  display: block;
+  margin: auto; }
+
+path {
+  transition: .6s fill;
+  fill: #343434;
+  stroke: #8e8b82; }
+  path:hover {
+    fill: #649d66; }
 
 .continente {
-  padding: 2rem; }
+  padding: 3rem; }
   .continente h3 {
     font-family: staatliches;
     font-weight: normal;
@@ -479,4 +488,6 @@ footer {
   .continente h4 {
     font-size: 0.8rem; }
   form {
-    text-align: left; } }
+    text-align: left; }
+  .continente {
+    padding: 1rem; } }

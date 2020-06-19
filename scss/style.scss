@@ -161,7 +161,7 @@ header{
 .fondo-patron{
     background-image: url(../fotos/patronvector.svg);
     background-size: left, bottom;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
 }
 .titulo{
     @include tipografia($font-secundary, normal, 6rem, $gris-oscuro);
@@ -287,17 +287,27 @@ header{
     }
 }
 // DESTINOS
-.enlace-continetes {
-    text-align: center;   
-    a {
-        @include tipografia($font-secundary, normal, 2rem, $gris-claro);
-        letter-spacing: .2rem;
-        padding: .5rem;
-        text-decoration: none;
+.parrafo-r{
+    @include tipografia($font-primary, 400, 1.3rem, $gris-claro);
+    text-align: center;
+    font-style: italic;
+    padding-top: 7rem;
+}
+.img-map{
+    display: block;
+    margin: auto;
+}
+path {
+	transition: .6s fill;
+    fill: $gris-oscuro;
+    stroke: $gris-claro;
+    &:hover {
+    fill: $verde;
     }
 }
+
 .continente {
-    padding: 2rem;
+    padding: 3rem;
     h3{
         @include tipografia($font-secundary, normal, 2.5rem, $gris-oscuro);
         letter-spacing: 0.2rem;
@@ -410,7 +420,7 @@ footer {
 // MEDIA QUERIES
 @media (max-width: 768px) {
     :root{
-       font-size: 12px;
+        font-size: 12px;
     }
 }
 @media (max-width: 575px) {
@@ -445,5 +455,8 @@ footer {
     }
     form{
         text-align: left;
+    }
+    .continente {
+        padding: 1rem;
     }
 }
