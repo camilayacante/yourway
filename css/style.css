@@ -13,6 +13,9 @@
 .fondo-blanco-f {
   background-color: #fff; }
 
+html {
+  scroll-behavior: smooth; }
+
 header nav {
   font-family: roboto; }
 
@@ -169,29 +172,32 @@ header .fondo-index {
   color: #f3f3f3;
   text-align: center; }
 
-.fondo-patron {
-  background-image: url(../fotos/patronvector.svg);
-  background-size: left, bottom;
-  padding-bottom: 2rem; }
+.fondo-nosotras {
+  background-image: url(../fotos/fondos/fondo-nosotras.jpg);
+  background-size: cover;
+  padding: 6rem;
+  background-repeat: no-repeat;
+  background-position: left, bottom;
+  margin-top: 2rem; }
 
 .titulo {
   font-family: staatliches;
   font-weight: normal;
   font-size: 6rem;
   color: #343434;
-  text-align: center;
   line-height: 1;
   font-style: italic;
-  padding-top: 7rem;
-  letter-spacing: .2rem; }
+  padding-top: 3.5rem;
+  letter-spacing: .3rem; }
 
 .parrafo {
   font-family: roboto;
   font-weight: 400;
   font-size: 1.3rem;
   color: #8e8b82;
-  text-align: center;
-  font-style: italic; }
+  text-align: right;
+  font-style: italic;
+  margin-right: 0px; }
 
 .lista-nosotras {
   padding-top: 2rem;
@@ -247,6 +253,8 @@ header .fondo-index {
   font-size: 1.5rem;
   color: #343434;
   font-style: italic; }
+  .presupuesto .txt-presupuesto {
+    padding: 3rem; }
   .presupuesto h3 {
     font-family: roboto;
     font-weight: normal;
@@ -305,7 +313,8 @@ header .fondo-index {
   font-family: roboto;
   font-weight: 300;
   font-size: 1.1rem;
-  color: #343434; }
+  color: #343434;
+  text-align: left; }
 
 .itinerario .items h6 {
   font-family: roboto;
@@ -323,6 +332,12 @@ header .fondo-index {
     background-color: #f3f3f3;
     color: #8e8b82; }
 
+.fondo-mapa {
+  background-image: url(../fotos/fondos/fondo-map.jpg);
+  background-repeat: no-repeat;
+  background-position: left, bottom;
+  background-size: cover; }
+
 .parrafo-r {
   font-family: roboto;
   font-weight: 400;
@@ -336,12 +351,16 @@ header .fondo-index {
   display: block;
   margin: auto; }
 
-path {
+.grupo-svg path {
   transition: .6s fill;
   fill: #343434;
   stroke: #8e8b82; }
-  path:hover {
+  .grupo-svg path:hover {
     fill: #649d66; }
+
+scroll-container {
+  overflow-y: scroll;
+  scroll-behavior: smooth; }
 
 .continente {
   padding: 3rem; }
@@ -378,10 +397,6 @@ path {
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     text-align: center; }
-  .ciudades .card {
-    transition: 150ms ease; }
-    .ciudades .card:hover {
-      transform: scale(1.05); }
   .ciudades .oscuro .card-title {
     font-family: roboto;
     font-weight: 300;
@@ -456,6 +471,30 @@ path {
     border-style: solid;
     border-color: #8e8b82; }
 
+.subtitulo-news {
+  font-family: roboto;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #8e8b82;
+  letter-spacing: .5rem;
+  text-transform: uppercase;
+  text-align: center; }
+
+.avatar {
+  text-align: left; }
+  .avatar img {
+    position: relative; }
+  .avatar div {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    font-family: roboto;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #343434; }
+    .avatar div h5 {
+      font-weight: bold; }
+
 footer {
   font-family: roboto;
   font-weight: 300;
@@ -466,23 +505,33 @@ footer {
     footer div a {
       color: #f3f3f3; }
 
+@media (max-width: 960px) {
+  :root {
+    font-size: 14px; }
+  .box-viaje .btn-guia {
+    display: none; }
+  .box-viaje .btn-destino {
+    display: none; } }
+
 @media (max-width: 768px) {
   :root {
-    font-size: 12px; } }
+    font-size: 12px; }
+  section {
+    text-align: center; } }
 
 @media (max-width: 575px) {
   :root {
     font-size: 8px; }
-  section {
-    text-align: center; }
-  .box-viaje .btn-guia {
-    display: none; }
-  .box-viaje .btn-destino {
-    display: none; }
+  .fondo-nosotras {
+    padding-right: 1rem; }
+  .presupuesto .txt-presupuesto {
+    padding: 1.5rem; }
   .enlace-continetes a {
     font-size: 1.5rem;
     padding-left: 2rem;
     padding-right: 2rem; }
+  .parrafo-r {
+    padding-top: 1rem; }
   .continente h3 {
     font-size: 2rem; }
   .continente h4 {
@@ -490,4 +539,4 @@ footer {
   form {
     text-align: left; }
   .continente {
-    padding: 1rem; } }
+    padding: 1.5rem; } }

@@ -26,7 +26,10 @@ $colores:(
         background-color: $color;
     }
 }
-// INDEX 
+// INDEX
+html{
+    scroll-behavior: smooth;
+}
 header{
     nav{
         font-family: $font-primary;
@@ -158,23 +161,27 @@ header{
     }   
 }
 // NOSOTRAS
-.fondo-patron{
-    background-image: url(../fotos/patronvector.svg);
-    background-size: left, bottom;
-    padding-bottom: 2rem;
+.fondo-nosotras{
+    background-image: url(../fotos/fondos/fondo-nosotras.jpg);
+    background-size: cover;
+    padding: 6rem;
+    background-repeat: no-repeat;
+    background-position: left, bottom;
+    margin-top: 2rem;
+
 }
 .titulo{
     @include tipografia($font-secundary, normal, 6rem, $gris-oscuro);
-    text-align: center;
 	line-height: 1;
     font-style: italic;
-    padding-top: 7rem;
-    letter-spacing: .2rem;
+    padding-top: 3.5rem;
+    letter-spacing: .3rem;
 }
 .parrafo{
     @include tipografia($font-primary, 400, 1.3rem, $gris-claro);
-    text-align: center;
+    text-align: right;
     font-style: italic;
+    margin-right: 0px;
 }
 .lista-nosotras{
     padding-top: 2rem;
@@ -228,6 +235,9 @@ header{
 .presupuesto {
     @include tipografia($font-primary, 300, 1.5rem, $gris-oscuro);            
     font-style: italic;
+    .txt-presupuesto{
+        padding: 3rem;
+    }
     h3{
         @include tipografia($font-primary, normal, 1.5rem, $blanco);
         letter-spacing: .2rem;
@@ -271,10 +281,10 @@ header{
         }
         p{
             @include tipografia($font-primary, 300, 1.1rem, $gris-oscuro);
+            text-align: left;
         }
         h6{
             @include tipografia($font-primary, bold, 1.1rem, $gris-oscuro);
-            // text-align: center;
         }
         a{
             display: inline;
@@ -287,6 +297,12 @@ header{
     }
 }
 // DESTINOS
+.fondo-mapa{
+    background-image: url(../fotos/fondos/fondo-map.jpg);
+    background-repeat: no-repeat;
+    background-position: left, bottom;
+    background-size: cover;
+}
 .parrafo-r{
     @include tipografia($font-primary, 400, 1.3rem, $gris-claro);
     text-align: center;
@@ -297,15 +313,20 @@ header{
     display: block;
     margin: auto;
 }
-path {
-	transition: .6s fill;
-    fill: $gris-oscuro;
-    stroke: $gris-claro;
-    &:hover {
-    fill: $verde;
+.grupo-svg{
+    path {
+        transition: .6s fill;
+        fill: $gris-oscuro;
+        stroke: $gris-claro;
+        &:hover {
+            fill: $verde;
+        }
     }
 }
-
+scroll-container {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
 .continente {
     padding: 3rem;
     h3{
@@ -337,12 +358,6 @@ path {
         letter-spacing: 0.2rem;
         text-transform: uppercase;
         text-align: center;
-    }
-    .card {
-        transition: 150ms ease;
-        &:hover {
-        transform: scale(1.05);
-        }
     }
     .oscuro{
         .card-title {
@@ -407,6 +422,28 @@ path {
         border-color: $gris-claro;
     }
 }
+.subtitulo-news{
+    @include tipografia($font-primary, 400, 1rem, $gris-claro);
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.avatar{
+    text-align: left;
+    img{
+        position: relative;
+    }
+    div{
+        position: absolute;
+        top: 20%;
+        left: 35%;
+        @include tipografia($font-primary, 300, 1rem, $gris-oscuro);
+        h5{
+            font-weight: bold;
+        }
+
+    }
+}
 // FOOTER
 footer {
     @include tipografia($font-primary, 300, 1rem, $blanco);
@@ -418,17 +455,9 @@ footer {
     }
 }
 // MEDIA QUERIES
-@media (max-width: 768px) {
+@media (max-width: 960px) {
     :root{
-        font-size: 12px;
-    }
-}
-@media (max-width: 575px) {
-    :root{
-       font-size: 8px;
-    }
-    section{
-        text-align: center;
+        font-size: 14px;
     }
     .box-viaje{
         .btn-guia{
@@ -438,12 +467,36 @@ footer {
             display: none;
         }
     }
+}
+@media (max-width: 768px) {
+    :root{
+        font-size: 12px;
+    }
+    section{
+        text-align: center;
+    }
+}
+@media (max-width: 575px) {
+    :root{
+       font-size: 8px;
+    }
+    .fondo-nosotras{
+        padding-right: 1rem;
+    }
+    .presupuesto{
+        .txt-presupuesto{
+            padding: 1.5rem;
+        }
+    }
     .enlace-continetes{
         a{
             font-size: 1.5rem;
             padding-left: 2rem;
             padding-right: 2rem;
         }
+    }
+    .parrafo-r{
+        padding-top: 1rem;
     }
     .continente{
         h3{
@@ -457,6 +510,6 @@ footer {
         text-align: left;
     }
     .continente {
-        padding: 1rem;
+        padding: 1.5rem;
     }
 }
