@@ -231,6 +231,48 @@ header .fondo-index {
     .lista-nosotras div a :hover {
       transform: scale(1.2); }
 
+.titulo-gallery h4 {
+  font-family: roboto;
+  font-weight: 300;
+  font-size: 1.1rem;
+  color: #f3f3f3;
+  text-align: center;
+  letter-spacing: .1rem; }
+
+.titulo-gallery h3 {
+  font-family: staatliches;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #f3f3f3;
+  letter-spacing: .5rem;
+  text-transform: uppercase;
+  text-align: center; }
+
+.grid-gallery {
+  display: grid;
+  grid-auto-rows: 200px;
+  grid-gap: .5rem;
+  grid-auto-flow: row dense;
+  overflow: hidden; }
+  .grid-gallery .grid-gallery-item:nth-child(1) {
+    grid-column: span 1; }
+  .grid-gallery .grid-gallery-item:nth-child(4n) {
+    grid-column: span 2;
+    grid-row: span 1; }
+  .grid-gallery .grid-gallery-item:nth-child(6n) {
+    grid-column: span 3;
+    grid-row: span 1; }
+  .grid-gallery .grid-gallery-item:nth-child(7n) {
+    grid-column: span 2;
+    grid-row: span 2; }
+  .grid-gallery .grid-gallery-item:nth-child(40) {
+    grid-column: span 1;
+    grid-row: span 1; }
+  .grid-gallery .grid-gallery-item .grid-gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
 .fondo-guia {
   background-image: url(../fotos/fondos/fondo-guia.jpg);
   background-repeat: no-repeat;
@@ -480,6 +522,12 @@ scroll-container {
   text-transform: uppercase;
   text-align: center; }
 
+.fondo-email {
+  background-image: url(../fotos/fondos/fondo-email.svg);
+  background-repeat: no-repeat;
+  background-position: right, bottom;
+  background-size: 100%; }
+
 .avatar {
   text-align: left; }
   .avatar img {
@@ -505,13 +553,19 @@ footer {
     footer div a {
       color: #f3f3f3; }
 
+@media all and (min-width: 1024px) {
+  .grid-gallery {
+    grid-template-columns: repeat(6, 1fr); } }
+
 @media (max-width: 960px) {
   :root {
     font-size: 14px; }
   .box-viaje .btn-guia {
     display: none; }
   .box-viaje .btn-destino {
-    display: none; } }
+    display: none; }
+  .grid-gallery {
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media (max-width: 768px) {
   :root {
@@ -539,4 +593,6 @@ footer {
   form {
     text-align: left; }
   .continente {
-    padding: 1.5rem; } }
+    padding: 1.5rem; }
+  .grid-gallery {
+    grid-template-columns: repeat(1, 1fr); } }

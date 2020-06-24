@@ -168,7 +168,6 @@ header{
     background-repeat: no-repeat;
     background-position: left, bottom;
     margin-top: 2rem;
-
 }
 .titulo{
     @include tipografia($font-secundary, normal, 6rem, $gris-oscuro);
@@ -214,6 +213,52 @@ header{
             :hover {
                 transform: scale(1.2);
             }
+        }
+    }
+}.titulo-gallery {
+    h4{
+        @include tipografia($font-primary, 300, 1.1rem, $blanco);
+        text-align: center;
+        letter-spacing: .1rem;
+
+    }
+    h3 {
+        @include tipografia($font-secundary, 400, 1.5rem, $blanco);
+        letter-spacing: .5rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+.grid-gallery {
+    display: grid;
+    grid-auto-rows: 200px;
+    grid-gap: .5rem;
+    grid-auto-flow: row dense;
+    overflow: hidden;
+    .grid-gallery-item:nth-child(1) {
+        grid-column: span 1;
+    }
+    .grid-gallery-item:nth-child(4n) {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    .grid-gallery-item:nth-child(6n) {
+        grid-column: span 3;
+        grid-row: span 1;
+    }
+    .grid-gallery-item:nth-child(7n) {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    .grid-gallery-item:nth-child(40) {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .grid-gallery-item{
+        .grid-gallery-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 }
@@ -428,6 +473,12 @@ scroll-container {
     text-transform: uppercase;
     text-align: center;
 }
+.fondo-email{
+    background-image: url(../fotos/fondos/fondo-email.svg);
+    background-repeat: no-repeat;
+    background-position: right, bottom;
+    background-size: 100%;
+}
 .avatar{
     text-align: left;
     img{
@@ -455,6 +506,11 @@ footer {
     }
 }
 // MEDIA QUERIES
+@media all and (min-width: 1024px) {
+    .grid-gallery {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
 @media (max-width: 960px) {
     :root{
         font-size: 14px;
@@ -466,6 +522,9 @@ footer {
         .btn-destino{
             display: none;
         }
+    }
+    .grid-gallery {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 @media (max-width: 768px) {
@@ -511,5 +570,8 @@ footer {
     }
     .continente {
         padding: 1.5rem;
+    }
+    .grid-gallery {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
