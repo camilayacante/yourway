@@ -188,13 +188,18 @@ header .fondo-index {
   color: #f3f3f3;
   text-align: center; }
 
+.fondo-cohete {
+  background-image: url(../fotos/fondos/fondo-cohete.svg);
+  background-repeat: no-repeat;
+  background-position: right, center;
+  background-size: cover; }
+
 .fondo-nosotras {
   background-image: url(../fotos/fondos/fondo-nosotras.jpg);
   background-size: cover;
   padding: 6rem;
   background-repeat: no-repeat;
-  background-position: left, bottom;
-  margin-top: 2rem; }
+  background-position: left, bottom; }
 
 .titulo {
   font-family: staatliches;
@@ -308,11 +313,13 @@ header .fondo-index {
 .presupuesto {
   font-family: roboto;
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #343434;
-  font-style: italic; }
+  font-style: italic;
+  text-align: center; }
   .presupuesto .txt-presupuesto {
-    padding: 3rem; }
+    padding-top: 3rem;
+    padding-bottom: 3rem; }
   .presupuesto h3 {
     font-family: roboto;
     font-weight: normal;
@@ -338,6 +345,12 @@ header .fondo-index {
     font-weight: normal;
     font-size: 0.9rem;
     color: #8e8b82; }
+
+.fondo-foco {
+  background-image: url(../fotos/fondos/fondo-foco.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%; }
 
 .itinerario h3 {
   font-family: staatliches;
@@ -586,11 +599,11 @@ footer {
     height: 100vh; }
   .navbar-nav {
     margin-top: 20vh; }
-  .nav-link {
-    font-size: 2.3rem;
-    font-weight: bold;
-    margin-top: 2.5rem;
-    margin-right: 0px; } }
+    .navbar-nav .nav-link {
+      font-size: 2.3rem;
+      font-weight: bold;
+      margin-top: 2.5rem;
+      margin-right: 0px !important; } }
 
 @media (max-width: 768px) {
   :root {

@@ -175,6 +175,12 @@ header{
         }
     }   
 }
+.fondo-cohete {
+    background-image: url(../fotos/fondos/fondo-cohete.svg);
+    background-repeat: no-repeat;
+    background-position: right, center;
+    background-size: cover;
+}
 // NOSOTRAS
 .fondo-nosotras{
     background-image: url(../fotos/fondos/fondo-nosotras.jpg);
@@ -182,7 +188,6 @@ header{
     padding: 6rem;
     background-repeat: no-repeat;
     background-position: left, bottom;
-    margin-top: 2rem;
 }
 .titulo{
     @include tipografia($font-secundary, normal, 6rem, $gris-oscuro);
@@ -294,10 +299,12 @@ header{
         }
 }
 .presupuesto {
-    @include tipografia($font-primary, 300, 1.5rem, $gris-oscuro);            
+    @include tipografia($font-primary, 300, 1.3rem, $gris-oscuro);            
     font-style: italic;
+    text-align: center;
     .txt-presupuesto{
-        padding: 3rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
     h3{
         @include tipografia($font-primary, normal, 1.5rem, $blanco);
@@ -318,6 +325,12 @@ header{
         @include tipografia($font-primary, normal, .9rem, $gris-claro);
   
     }
+}
+.fondo-foco {
+    background-image: url(../fotos/fondos/fondo-foco.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
 }
 .itinerario{
     h3{
@@ -545,12 +558,12 @@ footer {
     }
     .navbar-nav{
         margin-top: 20vh;
-    }
-    .nav-link{
-        font-size: 2.3rem;
-        font-weight: bold;
-        margin-top: 2.5rem;
-        margin-right: 0px;
+        .nav-link{
+            font-size: 2.3rem;
+            font-weight: bold;
+            margin-top: 2.5rem;
+            margin-right: 0px!important;
+        }
     }
 }
 @media (max-width: 768px) {
