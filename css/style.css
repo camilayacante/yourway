@@ -13,11 +13,17 @@
 .fondo-blanco-f {
   background-color: #fff; }
 
+.btn {
+  border-radius: 0px; }
+
 html {
   scroll-behavior: smooth; }
 
 header nav {
-  font-family: roboto; }
+  font-family: roboto;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #343434; }
 
 header .fondo-index {
   background-image: url(../fotos/fondos/fondo.jpg);
@@ -33,12 +39,18 @@ header .fondo-index {
     line-height: 1;
     letter-spacing: 10px; }
 
+.fondo-nav {
+  background-color: #f3f3f3; }
+
 .pulsar {
-  transition: 150ms ease;
+  transition: 100ms ease;
   color: #343434; }
   .pulsar:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
     color: #649d66; }
+
+.active {
+  color: #649d66; }
 
 .subtitulo {
   font-family: staatliches;
@@ -50,7 +62,7 @@ header .fondo-index {
 .parrafo-index {
   font-family: roboto;
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #343434;
   font-style: italic; }
 
@@ -58,7 +70,11 @@ header .fondo-index {
   font-family: staatliches;
   font-weight: normal;
   font-size: 1.2rem;
-  color: #649d66; }
+  color: #f3f3f3;
+  background-color: #8e8b82; }
+  .ver-mas:hover {
+    background-color: #fff;
+    color: #8e8b82; }
 
 .subtitulo-blanco {
   font-family: staatliches;
@@ -204,7 +220,7 @@ header .fondo-index {
   padding-bottom: 2rem;
   transition: 150ms ease; }
   .lista-nosotras:hover {
-    transform: scale(1.1); }
+    transform: scale(1.02); }
   .lista-nosotras img {
     width: 18rem;
     margin: auto; }
@@ -560,18 +576,29 @@ footer {
 @media (max-width: 960px) {
   :root {
     font-size: 14px; }
-  .box-viaje .btn-guia {
-    display: none; }
-  .box-viaje .btn-destino {
-    display: none; }
   .grid-gallery {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .navbar {
+    opacity: 0.8; }
+  .navbar-toggler {
+    font-size: 2rem; }
+  .navbar-collapse {
+    height: 100vh; }
+  .navbar-nav {
+    margin-top: 20vh; }
+  .nav-link {
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-top: 2.5rem;
+    margin-right: 0px; } }
 
 @media (max-width: 768px) {
   :root {
     font-size: 12px; }
   section {
-    text-align: center; } }
+    text-align: center; }
+  .card {
+    margin: auto !important; } }
 
 @media (max-width: 575px) {
   :root {

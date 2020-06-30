@@ -2,7 +2,7 @@ $gris-oscuro: #343434;
 $blanco: #f3f3f3;
 $gris-claro: #8e8b82;
 $verde: #649d66;
-$success: #649d66;
+$blanco-f: #fff;
 $font-primary: roboto;
 $font-secundary: staatliches;
 
@@ -20,11 +20,15 @@ $colores:(
     gris-claro: #8e8b82,
     verde: #649d66,
     blanco-f: #fff,
-);
-@each $nombre, $color in $colores {
-    .fondo-#{$nombre}{
-        background-color: $color;
+    );
+    @each $nombre, $color in $colores {
+        .fondo-#{$nombre}{
+            background-color: $color;
+        }
     }
+// CAMBIOS BOOTS
+.btn {
+    border-radius: 0px;
 }
 // INDEX
 html{
@@ -32,7 +36,7 @@ html{
 }
 header{
     nav{
-        font-family: $font-primary;
+        @include tipografia($font-primary, normal, 1rem, $gris-oscuro);
     }
     .fondo-index{
         background-image: url(../fotos/fondos/fondo.jpg);   
@@ -48,24 +52,35 @@ header{
         }
     }
 }
+.fondo-nav{
+    background-color: $blanco;
+}
 .pulsar{
-    transition: 150ms ease;
+    transition: 100ms ease;
     color: $gris-oscuro;
-        &:hover {
-        transform: scale(1.2);
+    &:hover {
+        transform: scale(1.05);
         color: $verde;
-        }
+    }
+}
+.active{
+    color: $verde;
 }
 .subtitulo{
     @include tipografia($font-secundary, normal, 3.5rem, $gris-claro);
     font-style: italic;
 }
 .parrafo-index{
-    @include tipografia($font-primary, 300, 1.5rem, $gris-oscuro);
+    @include tipografia($font-primary, 300, 1.3rem, $gris-oscuro);
     font-style: italic;
 }
 .ver-mas{
-    @include tipografia($font-secundary, normal, 1.2rem, $verde);
+    @include tipografia($font-secundary, normal, 1.2rem, $blanco);
+    background-color: $gris-claro;
+    &:hover{
+        background-color: $blanco-f;
+        color: $gris-claro;
+    }
 }
 .subtitulo-blanco{
     @include tipografia($font-secundary, normal, 2.5rem, $blanco);
@@ -187,7 +202,7 @@ header{
     padding-bottom: 2rem;
     transition: 150ms ease;
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.02);
     }
     img{
         width: 18rem;
@@ -262,6 +277,7 @@ header{
         }
     }
 }
+
 // GUIA VIAJERA
 .fondo-guia{
         background-image: url(../fotos/fondos/fondo-guia.jpg);   
@@ -515,16 +531,26 @@ footer {
     :root{
         font-size: 14px;
     }
-    .box-viaje{
-        .btn-guia{
-            display: none;
-        }
-        .btn-destino{
-            display: none;
-        }
-    }
     .grid-gallery {
         grid-template-columns: repeat(3, 1fr);
+    }
+    .navbar{
+        opacity: 0.8;
+    }
+    .navbar-toggler{
+        font-size: 2rem;
+    }
+    .navbar-collapse{
+        height: 100vh;
+    }
+    .navbar-nav{
+        margin-top: 20vh;
+    }
+    .nav-link{
+        font-size: 2.3rem;
+        font-weight: bold;
+        margin-top: 2.5rem;
+        margin-right: 0px;
     }
 }
 @media (max-width: 768px) {
@@ -533,6 +559,9 @@ footer {
     }
     section{
         text-align: center;
+    }
+    .card {
+        margin: auto!important;
     }
 }
 @media (max-width: 575px) {
