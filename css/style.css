@@ -106,6 +106,8 @@ header .fondo-index {
   align-items: center;
   justify-content: center;
   overflow: hidden; }
+  .contenedor-foto h6 {
+    display: block; }
   .contenedor-foto .texto-imagen {
     position: absolute;
     text-align: center;
@@ -125,23 +127,43 @@ header .fondo-index {
       text-decoration: none;
       color: #343434; }
 
-.modal-title {
-  font-family: roboto;
-  font-weight: normal;
-  font-size: 1rem;
-  color: #f3f3f3; }
-
 .modal-body h2 {
   font-family: staatliches;
   font-weight: normal;
-  font-size: 2rem;
-  color: #8e8b82; }
+  font-size: 3rem;
+  color: #8e8b82;
+  text-align: center;
+  letter-spacing: .2rem;
+  background-image: url(../fotos/fondos/fondo-modal.svg);
+  background-size: 100%; }
 
-.modal-footer a {
+.modal-body .subtitulo-modal {
+  font-family: roboto;
+  font-weight: italic;
+  font-size: 1.2rem;
+  color: #8e8b82;
+  text-align: center; }
+
+.modal-body .cuerpo-modal {
+  font-family: roboto;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #8e8b82;
+  text-align: left; }
+
+.modal-body img {
+  height: 5rem; }
+
+.modal-body a {
   font-family: staatliches;
   font-weight: normal;
   font-size: 1.2rem;
-  color: #649d66; }
+  color: #649d66;
+  text-align: rights;
+  border: solid; }
+  .modal-body a:hover {
+    background-color: #8e8b82;
+    color: #f3f3f3; }
 
 .texto-modal {
   font-family: roboto; }
@@ -245,12 +267,10 @@ header .fondo-index {
     text-align: left;
     margin-top: 1rem; }
   .lista-nosotras div a {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #343434;
-    margin-right: 1rem;
-    transition: 150ms ease; }
-    .lista-nosotras div a :hover {
-      transform: scale(1.2); }
+    margin-top: .5rem;
+    margin-right: 1rem; }
 
 .titulo-gallery h4 {
   font-family: roboto;
@@ -420,7 +440,19 @@ header .fondo-index {
 
 .img-map {
   display: block;
-  margin: auto; }
+  margin: auto;
+  position: relative; }
+  .img-map .titulo-centrado {
+    font-family: staatliches;
+    font-weight: normal;
+    font-size: 6rem;
+    color: #8e8b82;
+    font-style: italic;
+    letter-spacing: .3rem;
+    position: absolute;
+    top: 78%;
+    left: 25%;
+    transform: translate(-50%, -50%); }
 
 .grupo-svg path {
   transition: .6s fill;
@@ -458,6 +490,9 @@ scroll-container {
       .continente a .flecha:hover {
         color: #343434; }
 
+.patron-ciudad {
+  background-image: url(../fotos/fondos/ciudades.svg); }
+
 .ciudades {
   text-align: center; }
   .ciudades h4 {
@@ -491,19 +526,21 @@ scroll-container {
     font-size: 0.7rem;
     color: #f3f3f3; }
 
-.preguntas h3 {
-  font-family: roboto;
-  font-weight: 300;
-  font-size: 1.2rem;
-  color: #f3f3f3;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase; }
-
-.preguntas p {
-  font-family: roboto;
-  font-weight: 300;
-  font-size: 1rem;
-  color: #f3f3f3; }
+.preguntas {
+  background-image: url(../fotos/fondos/preguntas.svg); }
+  .preguntas h3 {
+    font-family: staatliches;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #f3f3f3;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase; }
+  .preguntas h4 {
+    font-family: roboto;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #f3f3f3;
+    text-align: center; }
 
 .fondo-news {
   background-image: url(../fotos/fondos/fondo-news.jpg);
@@ -520,6 +557,12 @@ scroll-container {
     text-align: left;
     font-style: italic;
     line-height: 1; }
+
+.fondo-linea {
+  background-image: url(../fotos/blog/email.svg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 20rem; }
 
 .formulario h3 {
   font-family: roboto;
@@ -573,6 +616,7 @@ scroll-container {
       font-weight: bold; }
 
 footer {
+  padding-top: 1.5rem;
   font-family: roboto;
   font-weight: 300;
   font-size: 1rem;
@@ -603,7 +647,19 @@ footer {
       font-size: 2.3rem;
       font-weight: bold;
       margin-top: 2.5rem;
-      margin-right: 0px !important; } }
+      margin-right: 0px !important; }
+  .img-map .titulo-centrado {
+    font-size: 5rem;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    transform: none;
+    margin-top: 2rem; }
+  .fondo-mapa {
+    padding-top: 5rem !important; } }
+
+.presupuesto .card-deck .card {
+  flex: 1 0 0%; }
 
 @media (max-width: 768px) {
   :root {

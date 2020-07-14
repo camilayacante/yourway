@@ -26,7 +26,7 @@ $colores:(
             background-color: $color;
         }
     }
-// CAMBIOS BOOTS
+// CAMBIO BOOTSTRAP
 .btn {
     border-radius: 0px;
 }
@@ -104,7 +104,9 @@ header{
     align-items: center;
     justify-content: center;
     overflow: hidden;
-
+    h6 {
+        display: block;
+    }
     .texto-imagen {
         position: absolute;
         text-align: center;
@@ -125,18 +127,33 @@ header{
         }
     }
 }
-.modal-title {
-    @include tipografia($font-primary, normal, 1rem, $blanco);
-}
 .modal-body{
     h2{
-        @include tipografia($font-secundary, normal, 2rem, $gris-claro);
+        @include tipografia($font-secundary, normal, 3rem, $gris-claro);
+        text-align: center;
+        letter-spacing: .2rem;
+        background-image: url(../fotos/fondos/fondo-modal.svg);
+        background-size: 100%;
     }
-}
-.modal-footer {
+    .subtitulo-modal{
+        @include tipografia($font-primary, italic, 1.2rem, $gris-claro); 
+        text-align: center;
+    }
+    .cuerpo-modal{
+        @include tipografia($font-primary, normal, 1rem, $gris-claro);
+        text-align: left;
+    }
+    img{
+        height: 5rem;
+    }
     a{
         @include tipografia($font-secundary, normal, 1.2rem, $verde);
-
+        text-align: rights;
+        border: solid;
+        &:hover{
+            background-color: $gris-claro;
+            color: $blanco;
+        }
     }
 }
 .texto-modal{
@@ -226,21 +243,18 @@ header{
     }
     div{
         a{
-            font-size: 1rem;
+            font-size: 1.2rem;
             color: $gris-oscuro;
+            margin-top: .5rem;
             margin-right: 1rem;
-            transition: 150ms ease;
-            :hover {
-                transform: scale(1.2);
-            }
         }
     }
-}.titulo-gallery {
+}
+.titulo-gallery {
     h4{
         @include tipografia($font-primary, 300, 1.1rem, $blanco);
         text-align: center;
         letter-spacing: .1rem;
-
     }
     h3 {
         @include tipografia($font-secundary, 400, 1.5rem, $blanco);
@@ -386,6 +400,16 @@ header{
 .img-map{
     display: block;
     margin: auto;
+    position: relative;
+    .titulo-centrado {
+        @include tipografia($font-secundary, normal, 6rem, $gris-claro);
+        font-style: italic;
+        letter-spacing: .3rem;
+        position: absolute;
+        top: 78%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+    }
 }
 .grupo-svg{
     path {
@@ -425,6 +449,9 @@ scroll-container {
         }
     }
 }
+.patron-ciudad{
+    background-image: url(../fotos/fondos/ciudades.svg);
+}
 .ciudades {
     text-align: center;
     h4{
@@ -453,13 +480,15 @@ scroll-container {
     }
 }
 .preguntas {
+    background-image: url(../fotos/fondos/preguntas.svg);
     h3{
-        @include tipografia($font-primary, 300, 1.2rem, $blanco);
+        @include tipografia($font-secundary, 300, 1.5rem, $blanco);
         letter-spacing: 0.2rem;
         text-transform: uppercase;
     }
-    p {
-        @include tipografia($font-primary, 300, 1rem, $blanco);   
+    h4{
+        @include tipografia($font-primary, 400, 1.2rem, $blanco);  
+        text-align: center; 
     }
 }
 
@@ -477,6 +506,13 @@ scroll-container {
         font-style: italic;
         line-height: 1;
     }
+}
+.fondo-linea{
+    background-image: url(../fotos/blog/email.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 20rem;
+    // background-position-y: 16.5rem;
 }
 .formulario {
     h3{
@@ -521,11 +557,11 @@ scroll-container {
         h5{
             font-weight: bold;
         }
-
     }
 }
 // FOOTER
 footer {
+    padding-top: 1.5rem;
     @include tipografia($font-primary, 300, 1rem, $blanco);
     div{
         align-items: center;
@@ -563,6 +599,26 @@ footer {
             font-weight: bold;
             margin-top: 2.5rem;
             margin-right: 0px!important;
+        }
+    }
+    .img-map{
+        .titulo-centrado {
+            font-size: 5rem;
+            position: relative;
+            top: 0%;
+            left: 0%;
+            transform: none;
+            margin-top: 2rem;
+        }
+    }
+    .fondo-mapa{
+        padding-top: 5rem !important;
+    }
+}
+.presupuesto{
+    .card-deck{
+        .card {
+            flex: 1 0 0%;
         }
     }
 }

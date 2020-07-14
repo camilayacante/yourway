@@ -8,6 +8,11 @@
     <meta name="kaywords" content="viajes, vivir viajando, destinos, guia viajera, blog de viaje, mujeres viajando, presupuesto viajero, itinerarios">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Staatliches&display=swap" rel="stylesheet">
     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <script src="wow/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -36,13 +41,13 @@
                 </div>
             </section>   
         </header>
-		<section class="container">
+		<section class="container pb-5 pt-5">
             <h2 class="subtitulo mt-5 mb-1">Nosotras</h2>
-            <div class="row">
+            <div class="row mb-1">
                 <p class="col-12 col-lg-8 mb-auto mt-auto parrafo-index">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non voluptatibus facere nihil labore aut accusantium corporis, 	doloremque hic autem omnis quae animi sequi ad, est minima obcaecati quisquam laborum delectus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, odit!</p>
-                <img src="fotos/amistad.svg" alt="manos entrelazando dedos" class="col-6 col-lg-3 ml-auto mr-auto mt-0">
+                <img src="fotos/amistad.svg" alt="manos entrelazando dedos" class="col-6 col-lg-3 ml-auto mr-auto mt-0 wow animate__animated animate__flipInY">
             </div>
-            <a href="nosotras.html" class="btn ml-0 mb-5 ver-mas">un poco mas!</a> 
+            <a href="nosotras.html" class="btn ml-0 mb-5 mt-2 ver-mas">un poco mas!</a> 
         </section>
         <section class="container-fluid fondo-gris-claro p-2">
             <div class="container">          
@@ -51,29 +56,29 @@
             </div>
         </section>
         <section class="container-fluid fondo-blanco p-4">
-            <div class="container">
-                <h4 class="subtitulo-blog pb-1">lo ultimo del blog</h4>
-                <div class="row">
+            <div class="container pb-5">
+                <h4 class="subtitulo-blog p-4 wow animate__animated animate__fadeInUp">lo ultimo del blog</h4>
+                <div class="row wow animate__animated animate__fadeInUp">
                     <div class="col-6 col-md-3 p-3 contenedor-foto">
-                        <img src="fotos/blog/foto1.jpg" alt="" class=" fotos" width="100%">
+                        <img src="fotos/blog/foto1.jpg" alt="paisaje mandir" class=" fotos" width="100%">
                         <div class="texto-imagen">
                             <a href="#modalFotoUno" data-toggle="modal">leer mas!</a>
                         </div>
                     </div>
                     <div class="col-6 col-md-3 p-3 contenedor-foto">
-                        <img src="fotos/blog/foto2.jpg" alt="" class=" fotos" width="100%">
+                        <img src="fotos/blog/foto2.jpg" alt="paisaje montaña con pinos" class=" fotos" width="100%">
                         <div class="texto-imagen">
                             <a href="#modalFotoDos" data-toggle="modal">leer mas!</a>
                         </div>
                     </div>
                     <div class="col-6 col-md-3 p-3 contenedor-foto">
-                        <img src="fotos/blog/foto3.jpg" alt="" class="fotos" width="100%">
+                        <img src="fotos/blog/foto3.jpg" alt="paisaje playa caribe" class="fotos" width="100%">
                         <div class="texto-imagen">
                             <a href="#modalFotoTres" data-toggle="modal">leer mas!</a>
                         </div>
                     </div>
                     <div class="col-6 col-md-3 p-3 contenedor-foto">
-                        <img src="fotos/blog/foto4.jpg" alt="" class="fotos" width="100%">
+                        <img src="fotos/blog/foto4.jpg" alt="paisaje montaña con prado de flores" class="fotos" width="100%">
                         <div class="texto-imagen">
                             <a href="#modalFotoCuatro" data-toggle="modal">leer mas!</a>
                         </div>
@@ -85,7 +90,7 @@
             <div class="container-fluid fondo-gris-claro">
                 <div class="row">
                     <div class="col-12 col-md-6 m-0 p-0">
-                        <img src="fotos/seccion/escritorio.jpg" alt="" width="100%">
+                        <img src="fotos/seccion/escritorio.jpg" alt="mesa de trabajo" width="100%">
                     </div>
                     <div class="col-12 col-md-6 text-center m-auto">
                         <h4>¿No sabes a donde ir?</h4>
@@ -94,9 +99,9 @@
                 </div>
             </div>
             <div class="container-fluid p-5 fondo-blanco fondo-cohete">
-                <div class="card-group m-auto">
+                <div class="card-group m-auto pt-3 pb-4 wow animate__animated animate__fadeInUp">
                     <div class="card col-9 col-md-4 ml-auto mr-4 fondo-gris-claro rounded-0">
-                        <img src="fotos/seccion/guia.jpg" class="card-img-top pt-3" alt="...">
+                        <img src="fotos/seccion/guia.jpg" class="card-img-top pt-3" alt="agenda">
                         <div class="card-body text-right">
                             <h5 class="card-title">Guia viajera</h5>
                             <p class="card-text">Cuando empiezas a planear un viaje surgen muchas preguntas!El destino, con quien viajas, cuantos dias,si es de aventura, de conocmiento de trabajo?.</p>
@@ -104,7 +109,7 @@
                         </div>
                     </div>
                     <div class="card col-9 col-md-4 mr-auto ml-4 mt-0 fondo-gris-claro rounded-0">
-                        <img src="fotos/seccion/destino.jpg" class="card-img-top pt-3" alt="...">
+                        <img src="fotos/seccion/destino.jpg" class="card-img-top pt-3" alt="mapas">
                         <div class="card-body text-right">
                             <h5 class="card-title">Destinos</h5>
                             <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sunt suscipit excepturi reiciendis officiis amet. Veniam nisi consectetur esse officiis.</p>
@@ -121,8 +126,8 @@
                         <h6>yourway@gmail.com</h6>
                     </div>
                     <div class="col-4">
-                        <a class="btn btn-outline-light rounded-circle mr-3" href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light rounded-circle" href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light rounded-circle mr-3 wow animate__animated animate__flipInY" href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light rounded-circle wow animate__animated animate__flipInY" href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
                     </div>
                     <div class="col-4">
                         <a href="#" class="m-3">Soporte</a>
@@ -139,23 +144,17 @@
     <div class="modal" id="modalFotoUno" tabindex="1" role="dialog">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
-                <div class="modal-header fondo-gris-claro">
-                    <h5 class="modal-title">
-                        Articulo del blog!
-                    </h5>
-                    <button type="button" class="close" data-dismiss="modal">
-                        <span>&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body fondo-blanco">
-                    <h2>Un viaje de autodescubrimiento</h2>
-                    <p class="font-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque accusamus dolore placeat nobis et qui?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi architecto aliquam sed nesciunt, totam impedit animi labore esse magni qui amet fugit nemo, unde libero eligendi debitis quas rem, a enim quaerat? Illum aliquam laborum iure provident, obcaecati est accusantium unde tempore, corporis repudiandae vitae quam, nobis dolorum totam et deleniti cumque quae doloremque sequi temporibus rem inventore maiores fugiat quibusdam! Quae, optio maxime explicabo nihil fugiat dolore odit? Temporibus doloremque quod dolores, voluptatibus nesciunt itaque quidem nemo, debitis architecto assumenda dolor.</p>
-                    <p class="text-center font-italic fondo-gris-claro text-light">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita maiores consequatur nisi est temporibus repudiandae, dolores nulla autem rem dolorum."</p>
-                    <p>Molestiae accusamus numquam eius rem at repellat temporibus commodi deleniti cupiditate molestias aspernatur aperiam, quae reiciendis a. Rem harum vel voluptatum laboriosam veritatis odit, nobis quasi officiis temporibus iste illum nam eius! Id quisquam explicabo corrupti saepe perferendis! Mollitia magnam ad, alias eos esse quisquam, voluptatem similique amet nostrum neque quo, placeat autem corrupti iure inventore accusamus vel nulla soluta at tenetur blanditiis nihil quasi. Vel id repudiandae quod mollitia voluptatem commodi officiis explicabo necessitatibus odio voluptate.</p>
-                </div>
-                <div class="modal-footer fondo-blanco">
-                    <a href="#" class="btn btn-outline-dark">Ver mas notas!</a>
+                <div class="modal-body fondo-blanco row">
+                    <h2 class="col-12 fondo-gris-oscuro pt-5 pb-5">Un viaje de autodescubrimiento</h2>
+                    <div class="col-8 col-md-4 subtitulo-modal mt-3 ml-auto mr-auto">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque accusamus dolore placeat nobis et qui?</p>
+                        <img src="fotos/firma/firma1.png" alt="">
+                        <a href="#" class="mt-4 btn btn-outline">Ver mas notas!</a>
+                    </div>
+                    <div class="col-12 col-md-8 cuerpo-modal mt-3">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi architecto aliquam sed nesciunt, totam impedit animi labore esse magni qui amet fugit nemo, unde libero eligendi debitis quas rem, a enim quaerat? Illum aliquam laborum iure provident, obcaecati est accusantium unde tempore, corporis repudiandae vitae quam, nobis dolorum totam et deleniti cumque quae doloremque sequi temporibus rem inventore maiores fugiat quibusdam! Quae, optio maxime explicabo nihil fugiat dolore odit? Temporibus doloremque quod dolores, voluptatibus nesciunt itaque quidem nemo, debitis architecto assumenda dolor.</p>
+                        <p class="text-center font-italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita maiores consequatur nisi est temporibus repudiandae, dolores nulla autem rem dolorum."</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -163,23 +162,17 @@
     <div class="modal" id="modalFotoDos" tabindex="1" role="dialog">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
-                <div class="modal-header fondo-gris-claro">
-                    <h5 class="modal-title">
-                        Articulo del blog!
-                    </h5>
-                    <button type="button" class="close" data-dismiss="modal">
-                        <span>&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body fondo-blanco">
-                    <h2>Naturaleza y vida</h2>
-                    <p class="font-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque accusamus dolore placeat nobis et qui?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi architecto aliquam sed nesciunt, totam impedit animi labore esse magni qui amet fugit nemo, unde libero eligendi debitis quas rem, a enim quaerat? Illum aliquam laborum iure provident, obcaecati est accusantium unde tempore, corporis repudiandae vitae quam, nobis dolorum totam et deleniti cumque quae doloremque sequi temporibus rem inventore maiores fugiat quibusdam! Quae, optio maxime explicabo nihil fugiat dolore odit? Temporibus doloremque quod dolores, voluptatibus nesciunt itaque quidem nemo, debitis architecto assumenda dolor.</p>
-                    <p class="text-center font-italic fondo-gris-claro text-light">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita maiores consequatur nisi est temporibus repudiandae, dolores nulla autem rem dolorum."</p>
-                    <p>Molestiae accusamus numquam eius rem at repellat temporibus commodi deleniti cupiditate molestias aspernatur aperiam, quae reiciendis a. Rem harum vel voluptatum laboriosam veritatis odit, nobis quasi officiis temporibus iste illum nam eius! Id quisquam explicabo corrupti saepe perferendis! Mollitia magnam ad, alias eos esse quisquam, voluptatem similique amet nostrum neque quo, placeat autem corrupti iure inventore accusamus vel nulla soluta at tenetur blanditiis nihil quasi. Vel id repudiandae quod mollitia voluptatem commodi officiis explicabo necessitatibus odio voluptate.</p>
-                </div>
-                <div class="modal-footer fondo-blanco">
-                    <a href="#" class="btn btn-outline-dark">Ver mas notas!</a>
+                <div class="modal-body fondo-blanco row">
+                    <h2 class="col-12 fondo-gris-oscuro pt-5 pb-5">Naturaleza y vida</h2>
+                    <div class="col-8 col-md-4 subtitulo-modal mt-3 ml-auto mr-auto">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque accusamus dolore placeat nobis et qui?</p>
+                        <img src="fotos/firma/firma2.png" alt="">
+                        <a href="#" class="mt-4 btn btn-outline">Ver mas notas!</a>
+                    </div>
+                    <div class="col-12 col-md-8 cuerpo-modal mt-3">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi architecto aliquam sed nesciunt, totam impedit animi labore esse magni qui amet fugit nemo, unde libero eligendi debitis quas rem, a enim quaerat? Illum aliquam laborum iure provident, obcaecati est accusantium unde tempore, corporis repudiandae vitae quam, nobis dolorum totam et deleniti cumque quae doloremque sequi temporibus rem inventore maiores fugiat quibusdam! Quae, optio maxime explicabo nihil fugiat dolore odit? Temporibus doloremque quod dolores, voluptatibus nesciunt itaque quidem nemo, debitis architecto assumenda dolor.</p>
+                        <p class="text-center font-italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita maiores consequatur nisi est temporibus repudiandae, dolores nulla autem rem dolorum."</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -187,23 +180,17 @@
     <div class="modal" id="modalFotoTres" tabindex="1" role="dialog">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
-                <div class="modal-header fondo-gris-claro">
-                    <h5 class="modal-title">
-                        Articulo de opinión
-                    </h5>
-                    <button type="button" class="close" data-dismiss="modal">
-                        <span>&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body fondo-blanco">
-                    <h2>Destinos para relajar</h2>
-                    <p class="font-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque accusamus dolore placeat nobis et qui?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi architecto aliquam sed nesciunt, totam impedit animi labore esse magni qui amet fugit nemo, unde libero eligendi debitis quas rem, a enim quaerat? Illum aliquam laborum iure provident, obcaecati est accusantium unde tempore, corporis repudiandae vitae quam, nobis dolorum totam et deleniti cumque quae doloremque sequi temporibus rem inventore maiores fugiat quibusdam! Quae, optio maxime explicabo nihil fugiat dolore odit? Temporibus doloremque quod dolores, voluptatibus nesciunt itaque quidem nemo, debitis architecto assumenda dolor.</p>
-                    <p class="text-center font-italic fondo-gris-claro text-light">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita maiores consequatur nisi est temporibus repudiandae, dolores nulla autem rem dolorum."</p>
-                    <p>Molestiae accusamus numquam eius rem at repellat temporibus commodi deleniti cupiditate molestias aspernatur aperiam, quae reiciendis a. Rem harum vel voluptatum laboriosam veritatis odit, nobis quasi officiis temporibus iste illum nam eius! Id quisquam explicabo corrupti saepe perferendis! Mollitia magnam ad, alias eos esse quisquam, voluptatem similique amet nostrum neque quo, placeat autem corrupti iure inventore accusamus vel nulla soluta at tenetur blanditiis nihil quasi. Vel id repudiandae quod mollitia voluptatem commodi officiis explicabo necessitatibus odio voluptate.</p>
-                </div>
-                <div class="modal-footer fondo-blanco">
-                    <a href="#" class="btn btn-outline-dark">Ver mas notas!</a>
+                <div class="modal-body fondo-blanco row">
+                    <h2 class="col-12 fondo-gris-oscuro pt-5 pb-5">Destinos para relajar</h2>
+                    <div class="col-8 col-md-4 subtitulo-modal mt-3 ml-auto mr-auto">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque accusamus dolore placeat nobis et qui?</p>
+                        <img src="fotos/firma/firma1.png" alt="">
+                        <a href="#" class="mt-4 btn btn-outline">Ver mas notas!</a>
+                    </div>
+                    <div class="col-12 col-md-8 cuerpo-modal mt-3">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi architecto aliquam sed nesciunt, totam impedit animi labore esse magni qui amet fugit nemo, unde libero eligendi debitis quas rem, a enim quaerat? Illum aliquam laborum iure provident, obcaecati est accusantium unde tempore, corporis repudiandae vitae quam, nobis dolorum totam et deleniti cumque quae doloremque sequi temporibus rem inventore maiores fugiat quibusdam! Quae, optio maxime explicabo nihil fugiat dolore odit? Temporibus doloremque quod dolores, voluptatibus nesciunt itaque quidem nemo, debitis architecto assumenda dolor.</p>
+                        <p class="text-center font-italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita maiores consequatur nisi est temporibus repudiandae, dolores nulla autem rem dolorum."</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -211,23 +198,17 @@
     <div class="modal" id="modalFotoCuatro" tabindex="1" role="dialog">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
-                <div class="modal-header fondo-gris-claro">
-                    <h5 class="modal-title">
-                        Articulo de opinión
-                    </h5>
-                    <button type="button" class="close" data-dismiss="modal">
-                        <span>&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body fondo-blanco">
-                    <h2>Viviendo en la altura</h2>
-                    <p class="font-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque accusamus dolore placeat nobis et qui?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi architecto aliquam sed nesciunt, totam impedit animi labore esse magni qui amet fugit nemo, unde libero eligendi debitis quas rem, a enim quaerat? Illum aliquam laborum iure provident, obcaecati est accusantium unde tempore, corporis repudiandae vitae quam, nobis dolorum totam et deleniti cumque quae doloremque sequi temporibus rem inventore maiores fugiat quibusdam! Quae, optio maxime explicabo nihil fugiat dolore odit? Temporibus doloremque quod dolores, voluptatibus nesciunt itaque quidem nemo, debitis architecto assumenda dolor.</p>
-                    <p class="text-center font-italic fondo-gris-claro text-light">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita maiores consequatur nisi est temporibus repudiandae, dolores nulla autem rem dolorum."</p>
-                    <p>Molestiae accusamus numquam eius rem at repellat temporibus commodi deleniti cupiditate molestias aspernatur aperiam, quae reiciendis a. Rem harum vel voluptatum laboriosam veritatis odit, nobis quasi officiis temporibus iste illum nam eius! Id quisquam explicabo corrupti saepe perferendis! Mollitia magnam ad, alias eos esse quisquam, voluptatem similique amet nostrum neque quo, placeat autem corrupti iure inventore accusamus vel nulla soluta at tenetur blanditiis nihil quasi. Vel id repudiandae quod mollitia voluptatem commodi officiis explicabo necessitatibus odio voluptate.</p>
-                </div>
-                <div class="modal-footer fondo-blanco">
-                    <a href="#" class="btn btn-outline-dark">Ver mas notas!</a>
+                <div class="modal-body fondo-blanco row">
+                    <h2 class="col-12 fondo-gris-oscuro pt-5 pb-5">Viviendo en la altura</h2>
+                    <div class="col-8 col-md-4 subtitulo-modal mt-3 ml-auto mr-auto">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque accusamus dolore placeat nobis et qui?</p>
+                        <img src="fotos/firma/firma2.png" alt="">
+                        <a href="#" class="mt-4 btn btn-outline">Ver mas notas!</a>
+                    </div>
+                    <div class="col-12 col-md-8 cuerpo-modal mt-3">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi architecto aliquam sed nesciunt, totam impedit animi labore esse magni qui amet fugit nemo, unde libero eligendi debitis quas rem, a enim quaerat? Illum aliquam laborum iure provident, obcaecati est accusantium unde tempore, corporis repudiandae vitae quam, nobis dolorum totam et deleniti cumque quae doloremque sequi temporibus rem inventore maiores fugiat quibusdam! Quae, optio maxime explicabo nihil fugiat dolore odit? Temporibus doloremque quod dolores, voluptatibus nesciunt itaque quidem nemo, debitis architecto assumenda dolor.</p>
+                        <p class="text-center font-italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita maiores consequatur nisi est temporibus repudiandae, dolores nulla autem rem dolorum."</p>
+                    </div>
                 </div>
             </div>
         </div>
