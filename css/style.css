@@ -108,7 +108,9 @@ header .fondo-index {
   overflow: hidden; }
   .contenedor-foto h6 {
     display: block; }
-  .contenedor-foto .texto-imagen {
+  .contenedor-foto a {
+    text-decoration: none;
+    color: #343434;
     position: absolute;
     text-align: center;
     font-family: staatliches;
@@ -121,11 +123,8 @@ header .fondo-index {
     margin: 0px;
     padding: 160px;
     background-color: #f3f3f3; }
-    .contenedor-foto .texto-imagen:hover {
+    .contenedor-foto a:hover {
       opacity: .5; }
-    .contenedor-foto .texto-imagen a {
-      text-decoration: none;
-      color: #343434; }
 
 .modal-body h2 {
   font-family: staatliches;
@@ -191,24 +190,33 @@ header .fondo-index {
   font-size: 1rem;
   color: #343434; }
 
-.box-viaje .card-img-top {
-  width: 100%; }
-
-.box-viaje .card-body .card-title {
-  font-family: staatliches;
-  font-weight: normal;
-  font-size: 1.5rem;
-  color: #343434;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: .5rem; }
+.box-viaje .text-card-centro {
+  position: relative; }
+  .box-viaje .text-card-centro .card-img-top {
+    width: 100%; }
+  .box-viaje .text-card-centro .card-title {
+    font-family: staatliches;
+    font-weight: normal;
+    font-size: 2rem;
+    color: #f3f3f3;
+    text-transform: uppercase;
+    padding-left: 1.2rem;
+    letter-spacing: .5rem;
+    position: absolute;
+    top: 80%;
+    background-color: #8e8b82; }
 
 .box-viaje .card-body .card-text {
   font-family: roboto;
   font-weight: normal;
   font-size: 1rem;
   color: #f3f3f3;
-  text-align: center; }
+  text-align: left; }
+
+.box-viaje .card-body a {
+  color: #f3f3f3; }
+  .box-viaje .card-body a:hover {
+    color: #8e8b82; }
 
 .fondo-cohete {
   background-image: url(../fotos/fondos/fondo-cohete.svg);
@@ -320,7 +328,7 @@ header .fondo-index {
   background-position: top;
   padding-top: 10rem;
   padding-bottom: 5rem;
-  background-size: 100%; }
+  background-size: cover; }
   .fondo-guia .titulo-guia {
     font-family: staatliches;
     font-weight: normal;
@@ -348,23 +356,31 @@ header .fondo-index {
     letter-spacing: .2rem;
     text-transform: uppercase;
     text-align: center; }
-  .presupuesto .card-title {
+  .presupuesto .card .card-title {
     font-family: roboto;
     font-weight: normal;
     font-size: 1.3rem;
     color: #8e8b82;
     text-transform: uppercase;
     letter-spacing: .2rem; }
-  .presupuesto .card-text {
+  .presupuesto .card .card-text {
     font-family: roboto;
     font-weight: normal;
     font-size: 1rem;
     color: #8e8b82; }
+  .presupuesto .card p a {
+    color: #649d66;
+    border-color: #649d66; }
+    .presupuesto .card p a:hover {
+      background-color: #649d66;
+      color: #f3f3f3; }
   .presupuesto .text-colapse {
     font-family: roboto;
     font-weight: normal;
     font-size: 0.9rem;
-    color: #8e8b82; }
+    color: #8e8b82;
+    padding: 0px;
+    margin: 0px; }
 
 .fondo-foco {
   background-image: url(../fotos/fondos/fondo-foco.svg);
@@ -663,7 +679,7 @@ footer {
 
 @media (max-width: 768px) {
   :root {
-    font-size: 12px; }
+    font-size: 13px; }
   section {
     text-align: center; }
   .card {
@@ -671,7 +687,7 @@ footer {
 
 @media (max-width: 575px) {
   :root {
-    font-size: 10px; }
+    font-size: 11px; }
   .fondo-nosotras {
     padding-right: 1rem; }
   .presupuesto .txt-presupuesto {

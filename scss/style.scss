@@ -107,7 +107,9 @@ header{
     h6 {
         display: block;
     }
-    .texto-imagen {
+    a{
+        text-decoration: none;
+        color: $gris-oscuro;
         position: absolute;
         text-align: center;
         @include tipografia($font-secundary, normal, 3rem, $gris-oscuro);
@@ -117,13 +119,8 @@ header{
         margin: 0px;
         padding: 160px;
         background-color: $blanco;
-        
         &:hover{
             opacity: .5;
-        }
-        a{
-            text-decoration: none;
-            color: $gris-oscuro;
         }
     }
 }
@@ -176,19 +173,31 @@ header{
             @include tipografia($font-secundary, normal, 1rem, $gris-oscuro);
         }
     }
-    .card-img-top{
-        width: 100%;
+    .text-card-centro{
+        position: relative;
+        .card-img-top{
+            width: 100%;
+        }
+        .card-title{
+            @include tipografia($font-secundary, normal, 2rem, $blanco);
+            text-transform: uppercase;
+            padding-left: 1.2rem;
+            letter-spacing: .5rem;
+            position: absolute;
+            top: 80%;
+            background-color: $gris-claro;
+        }
     }
     .card-body{
-        .card-title{
-            @include tipografia($font-secundary, normal, 1.5rem, $gris-oscuro);
-            text-transform: uppercase;
-            text-align: center;
-            letter-spacing: .5rem;;
-        }
         .card-text {
             @include tipografia($font-primary, normal, 1rem, $blanco);
-            text-align: center;
+            text-align: left;
+        }
+        a{
+            color: $blanco;
+            &:hover{
+                color: $gris-claro;
+            }
         }
     }   
 }
@@ -304,7 +313,7 @@ header{
         background-position: top;
         padding-top: 10rem;
         padding-bottom: 5rem;
-        background-size: 100%;
+        background-size: cover;
         .titulo-guia{
             @include tipografia($font-secundary, normal, 6rem, $blanco);            
             text-align: left;
@@ -326,17 +335,31 @@ header{
         text-transform: uppercase;
         text-align: center;
     }
-    .card-title{
-        @include tipografia($font-primary, normal, 1.3rem, $gris-claro);
-        text-transform: uppercase;
-        letter-spacing: .2rem;
-    }
-    .card-text{
-        @include tipografia($font-primary, normal, 1rem, $gris-claro);
-
+    .card{
+        .card-title{
+            @include tipografia($font-primary, normal, 1.3rem, $gris-claro);
+            text-transform: uppercase;
+            letter-spacing: .2rem;
+        }
+        .card-text{
+            @include tipografia($font-primary, normal, 1rem, $gris-claro);
+            
+        }
+        p{
+            a{
+                color: $verde;
+                border-color: $verde;
+                &:hover{
+                    background-color: $verde;
+                    color: $blanco;
+                }
+            }
+        }
     }
     .text-colapse {
         @include tipografia($font-primary, normal, .9rem, $gris-claro);
+        padding: 0px;
+        margin: 0px;
   
     }
 }
@@ -624,7 +647,7 @@ footer {
 }
 @media (max-width: 768px) {
     :root{
-        font-size: 12px;
+        font-size: 13px;
     }
     section{
         text-align: center;
@@ -635,7 +658,7 @@ footer {
 }
 @media (max-width: 575px) {
     :root{
-       font-size: 10px;
+       font-size: 11px;
     }
     .fondo-nosotras{
         padding-right: 1rem;
