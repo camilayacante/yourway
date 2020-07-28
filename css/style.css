@@ -564,7 +564,7 @@ scroll-container {
   background-position: top;
   padding-top: 10rem;
   padding-bottom: 5rem;
-  background-size: 100%; }
+  background-size: cover; }
   .fondo-news h1 {
     font-family: staatliches;
     font-weight: normal;

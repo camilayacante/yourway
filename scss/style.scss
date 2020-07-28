@@ -522,7 +522,7 @@ scroll-container {
     background-position: top;
     padding-top: 10rem;
     padding-bottom: 5rem;
-    background-size: 100%;
+    background-size: cover;
     h1{
         @include tipografia($font-secundary, normal, 6rem, $blanco);            
         text-align: left;
