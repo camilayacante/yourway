@@ -679,7 +679,7 @@ footer {
 
 @media (max-width: 768px) {
   :root {
-    font-size: 13px; }
+    font-size: 12px; }
   section {
     text-align: center; }
   .card {
@@ -687,7 +687,7 @@ footer {
 
 @media (max-width: 575px) {
   :root {
-    font-size: 11px; }
+    font-size: 10px; }
   .fondo-nosotras {
     padding-right: 1rem; }
   .presupuesto .txt-presupuesto {
